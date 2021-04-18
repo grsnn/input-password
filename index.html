@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT PASSWORD</title>
+    <link rel="shortcut icon" href="image/logo.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form class="main__form">
+            <div class="group">
+                <label for="password" class="form__icon"><i class="fas fa-unlock-alt"></i></label>
+                <input type="password" class="form__input" id="password" placeholder="Contraseña">
+                <div class="form__pass">
+                    <i class="far fa-eye form__pass__icon icon__show active" id="iconShow"></i>
+                    <i class="fas fa-eye-slash form__pass__icon icon__hide" id="iconHide"></i>
+                </div>
+            </div>
+            <p class="message"><i class="fas fa-times-circle"></i> Su contraseña debe tener mas de 6 carácteres</p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.main {
+    width: 450px;
+    max-width: 100%;
+    background-image: linear-gradient(180deg, #7c2fe8 40%, #3e07dd 100%);
+    padding: 20px 20px;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+.main__form {
+    background: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    border-radius: 50px;
+}
+
+.form__icon {
+    position: absolute;
+    width: 20px;
+    font-size: 18px;
+    height: 100%;
+    top: 0;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7c2fe8;
+}
+
+.form__input {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    transition: all .3s ease;
+    caret-color: #7c2fe8;
+    color: #70706d;
+    font-size: 15px;
+}
+
+.form__input:focus {
+    box-shadow: 0 0 0 3px rgba(124, 47, 232, .14);
+    transition: all .3s ease;
+}
+
+.form__pass {
+    position: absolute;
+    right: 10px;
+    height: 100%;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__pass__icon {
+    position: absolute;
+    color: #7c2fe8;
+    font-size: 18px;
+    transform: scale(0);
+    cursor: pointer;
+    transition: all .3s linear;
+    opacity: 0;
+}
+
+.form__pass__icon.active {
+    transform: scale(1);
+    transition: all .3s linear;
+    opacity: 1;
+}
+
+.message {
+    color: rgba(255, 68, 68, .9);
+    font-weight: lighter;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 3px;
+    display: none;
+}
+
+.message .fas {
+    margin-right: 5px;
+}
+
+.message.error {
+    display: flex;
+    align-items: center;
+}
+
+.message.success {
+    color: #00C851;
+}
+
+@media (max-width: 767.98px) {
+    .main {
+        padding: 80px 15px;
+    }
+    .main__form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .main {
+        padding: 10px;
+    }
+    .main__form {
+        padding: 10px;
+    }
+}
